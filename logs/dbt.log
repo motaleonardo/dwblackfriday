@@ -1,0 +1,48 @@
+[0m13:07:12.430858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd95a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddb5490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddb59d0>]}
+
+
+============================== 13:07:12.436100 | aa736d3e-9b2f-44fe-a7f0-ede45021a56b ==============================
+[0m13:07:12.436100 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m13:07:12.436748 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/leonardomota/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m13:07:12.446942 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/leonardomota/.dbt')}
+[0m13:07:12.447438 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:07:58.535196 [debug] [MainThread]: Starter project path: /Users/leonardomota/Desktop/PatrimoniAI/Pipeline/dwblackfriday/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:07:58.547135 [info ] [MainThread]: 
+Your new dbt project "dwblackfriday" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:07:58.547712 [info ] [MainThread]: Setting up your profile.
+[0m13:10:08.568679 [info ] [MainThread]: Profile dwblackfriday written to /Users/leonardomota/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:10:08.610761 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 176.25336, "process_user_time": 1.240728, "process_kernel_time": 0.25443, "process_mem_max_rss": "92725248", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:10:08.611494 [debug] [MainThread]: Command `dbt init` succeeded at 13:10:08.611362 after 176.25 seconds
+[0m13:10:08.611950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e298d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f8eb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eccc10>]}
+[0m13:10:08.612398 [debug] [MainThread]: Flushing usage events
+[0m13:10:09.482323 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:55:13.062679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10475f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105393610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053d6710>]}
+
+
+============================== 14:55:13.068629 | c8f5b35a-9ad2-4973-bed6-196f11cb7b1a ==============================
+[0m14:55:13.068629 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m14:55:13.069282 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/leonardomota/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:55:13.069958 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/leonardomota/Desktop/PatrimoniAI/Pipeline/dwblackfriday/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:55:13.105563 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.12789086, "process_user_time": 1.415975, "process_kernel_time": 0.398239, "process_mem_max_rss": "90333184", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:13.106366 [debug] [MainThread]: Command `dbt run` failed at 14:55:13.106222 after 0.13 seconds
+[0m14:55:13.106863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10535d310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10152af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1013c5b10>]}
+[0m14:55:13.107339 [debug] [MainThread]: Flushing usage events
+[0m14:55:14.742841 [debug] [MainThread]: An error was encountered while trying to flush usage events
